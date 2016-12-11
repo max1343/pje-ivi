@@ -3,18 +3,65 @@ package widget;
 import java.awt.Graphics2D;
 
 import javax.swing.JComponent;
+import javax.swing.event.EventListenerList;
 
+import event.DiscreteEvent;
+import event.DiscreteEventListener;
+import event.SRTEvent;
+import event.SRTEventListener;
 import mygeom.Point2;
 
 public abstract class MTComponent extends JComponent{
 	protected Point2 taille;
 	protected Point2 pos;
+	protected  EventListenerList listenerList;
+	protected DiscreteEvent disEvent;
+	protected SRTEvent srtEvent;
 	
 	public MTComponent(){
 		taille = new Point2();
 		pos = new Point2();
+		listenerList = new EventListenerList();
 	}
 	
+	public void addSTEventListener(SRTEventListener srtl){
+		listenerList.add(SRTEventListener.class, srtl);
+	}
+	
+	public void addDiscreteEventListener(DiscreteEventListener disl){
+		listenerList.add(DiscreteEventListener.class, disl);
+	}
+	
+	 protected void fireDiscretePerformed() {
+	     // Guaranteed to return a non-null array
+	     Object[] listeners = listenerList.getListenerList();
+	     // Process the listeners last to first, notifying
+	     // those that are interested in this event
+	     for (int i = listeners.length-2; i>=0; i-=2) {
+	         if (listeners[i]==DiscreteEventListener.class) {
+	             // Lazily create the event:
+	             if (disEvent == null)
+	                 disEvent = new DiscreteEvent(this);
+	             ((DiscreteEventListener)listeners[i+1]).gesturePerformed(disEvent);
+	         }
+	     }
+	 }
+	 
+	 protected void fireSRTPerformed() {
+	     // Guaranteed to return a non-null array
+	     Object[] listeners = listenerList.getListenerList();
+	     // Process the listeners last to first, notifying
+	     // those that are interested in this event
+	     for (int i = listeners.length-2; i>=0; i-=2) {
+	         if (listeners[i]==SRTEventListener.class) {
+	             // Lazily create the event:
+	             if (srtEvent == null)
+	                 srtEvent = new SRTEvent(this);
+	             ((SRTEventListener)listeners[i+1]).gesturePerformed(srtEvent);
+	         }
+	     }
+	 }
+	 
 	public void draw(Graphics2D g) {
 		
 	}

@@ -8,13 +8,16 @@ import widget.MTComponent;
 
 public class ComponentMap {
 	HashMap<MTComponent, BlobQueue> CMap;
+	GestureAnalyzer ga;
 	
 	public ComponentMap(){
 		this.CMap = new HashMap<MTComponent, BlobQueue>();
+		this.ga = new GestureAnalyzer();
 	}
 	
 	public void addBlob(MTComponent component, int id, Point2 p){
 		CMap.put(component, new BlobQueue(id, p));
+		ga.analyze(component, CMap.get(component), "", id, p);
 	}
 	
 	public void updateBlob(int id, Point2 p){
@@ -23,6 +26,7 @@ public class ComponentMap {
 			bq = CMap.get(mtc);
 			if(bq.checkId(id)){
 				CMap.get(mtc).updateBlob(id, p);
+				ga.analyze(mtc, bq, "", id, p);
 				break;
 			}
 		}
@@ -35,6 +39,7 @@ public class ComponentMap {
 			bq = CMap.get(mtc);
 			if(bq.checkId(id)){
 				CMap.get(mtc).removeBlob(id, p);
+				ga.analyze(mtc, bq,"", id, p);
 				break;
 			}
 		}

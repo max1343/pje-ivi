@@ -1,0 +1,8 @@
+package event;
+
+public class GestureAnalyzer {
+
+	public void analyze(MTComponent mtc, BlobQueue bq, String state, String id, Point2 p){
+		
+	}
+}

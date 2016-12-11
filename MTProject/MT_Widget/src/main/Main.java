@@ -13,10 +13,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import TUIO.TuioCursor;
+import event.ChangeSideEvent;
+import event.ChangeSideEventListener;
 import mygeom.Tuple2;
 import widget.MTPicture;
 import widget.MTSurface;
-import TUIO.TuioCursor;
 
 public class Main {
 	
@@ -49,6 +51,17 @@ public class Main {
 		//crï¿½ation du MTSurfaceMTSurface mts = new MTSurface();
 		MTSurface mts = new MTSurface();
 		JButton jb = new JButton("Hide Cursor");
+		mts.setPreferredSize(new Dimension(1000,500));
+		mts.addChangeSideListener(new ChangeSideEventListener(){
+			public void changedSidePerformed(ChangeSideEvent evt) { 
+				System.out.println("curseur d'id : "+evt.getCursorId()+" a changé de coté"); 
+				}
+
+			public void gesturePerformed(ChangeSideEvent e) {
+				// TODO Auto-generated method stub
+				
+			} 
+			});
 		
 		jb.addActionListener(new ActionListener() {
 	         public void actionPerformed(ActionEvent e) {

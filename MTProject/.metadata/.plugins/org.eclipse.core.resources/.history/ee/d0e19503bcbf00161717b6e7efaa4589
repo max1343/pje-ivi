@@ -1,0 +1,81 @@
+package widget;
+
+import java.awt.Graphics2D;
+
+import javax.swing.JComponent;
+import javax.swing.event.EventListenerList;
+
+import event.DiscreteEventListener;
+import event.SRTEventListener;
+import mygeom.Point2;
+
+public abstract class MTComponent extends JComponent{
+	protected Point2 taille;
+	protected Point2 pos;
+	protected  EventListenerList listenerList;
+	protected DiscreteEventListener disEvent;
+	protected SRTEventListener srtEvent;
+	
+	public MTComponent(){
+		taille = new Point2();
+		pos = new Point2();
+		listenerList = new EventListenerList();
+	}
+	
+	public void addSTEventListener(SRTEventListener srtl){
+		listenerList.add(SRTEventListener.class, srtl);
+	}
+	
+	public void addDiscreteEventListener(DiscreteEventListener disl){
+		listenerList.add(DiscreteEventListener.class, disl);
+	}
+	
+	 protected void fireDiscretePerformed() {
+	     // Guaranteed to return a non-null array
+	     Object[] listeners = listenerList.getListenerList();
+	     // Process the listeners last to first, notifying
+	     // those that are interested in this event
+	     for (int i = listeners.length-2; i>=0; i-=2) {
+	         if (listeners[i]==DiscreteEventListener.class) {
+	             // Lazily create the event:
+	             if (disEvent == null)
+	                 dis = new DiscreteEventListener(this);
+	             ((FooListener)listeners[i+1]).fooXXX(fooEvent);
+	         }
+	     }
+	 }
+	public void draw(Graphics2D g) {
+		
+	}
+
+
+
+	public Point2 getTaille() {
+		return taille;
+	}
+
+
+
+	public void setTaille(Point2 taille) {
+		this.taille = taille;
+	}
+
+
+
+	public Point2 getPos() {
+		return pos;
+	}
+
+	public void setPos(Point2 pos) {
+		this.pos = pos;
+	}
+
+	public boolean isInside(Point2 p){
+		if( p.getX() < (pos.getX() + taille.getX()) && p.getX() > pos.getX()){
+			if( p.getY() < (pos.getY() + taille.getY()) && p.getY() > pos.getY()){
+				return true;
+			}
+		}
+		return false;
+	}
+}
