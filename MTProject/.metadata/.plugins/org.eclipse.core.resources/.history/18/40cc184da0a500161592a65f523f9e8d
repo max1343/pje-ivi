@@ -1,0 +1,43 @@
+package widget;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JPanel;
+
+import mygeom.Point2;
+import tuio.MTedt;
+
+public class MTSurface extends JPanel {
+	MTedt m ;
+	
+	public MTSurface() {
+		super();
+		m = new MTedt(this);
+	}
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		Graphics2D g2 = (Graphics2D) g;
+		// drawing instructions with g2.
+	}
+
+	public MTedt getMTedt(){
+		return this.m;
+	}
+
+
+	public synchronized void addCursor(int id, Point2 p){
+		System.out.println("id "+ id+ "coordonnées x "+ p.getX() + "y "+ p.getY());
+	}
+
+	public synchronized updateCursor(int id, Point2 p){
+		System.out.println("id "+ id+ "coordonnées x "+ p.getX() + "y "+ p.getY());
+	}
+	
+	
+	public synchronized removeCursor(int id, Point2 p){
+		System.out.println("id "+ id+ "coordonnées x "+ p.getX() + "y "+ p.getY());
+	}
+	
+}

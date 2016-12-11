@@ -1,0 +1,5 @@
+package mygeom;
+
+public class BlobQueue { 
+	HashMap<Integer,Path> cursor;
+	public BlobQueue() { cursor=new HashMap<Integer,Path>(); } ... }

@@ -1,0 +1,30 @@
+package main;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+
+import TUIO.TuioCursor;
+import tuio.MTedt;
+
+public class Main {
+	
+	
+	public static void main(String args[]) {
+		System.out.println("ok");
+		MTedt m = new MTedt();
+		TuioCursor tcur = new TuioCursor(7, 13, 43, 23);
+		m.addTuioCursor(tcur);
+	}
+	
+	
+	public void createGui() {
+		JFrame fen = new JFrame("Première fen"); 
+		fen.setLayout(new FlowLayout());
+		fen.setPreferredSize(new Dimension(500,500));
+		
+		
+	}
+
+}
