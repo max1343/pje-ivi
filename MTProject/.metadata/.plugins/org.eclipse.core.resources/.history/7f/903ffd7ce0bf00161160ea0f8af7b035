@@ -1,0 +1,53 @@
+package event;
+
+import java.awt.Graphics2D;
+import java.util.HashMap;
+
+import mygeom.Path;
+import mygeom.Point2;
+
+public class BlobQueue {
+	private HashMap<Integer, Path> cursor;
+	
+	public BlobQueue(){
+		this.cursor = new HashMap<Integer, Path>();
+	}
+	
+	public BlobQueue(int id, Point2 p){
+		this();
+		addBlob(id, p);
+	}
+	
+	public void addBlob(int id, Point2 p){
+		Path pa = new Path();
+		pa.add(p);
+		cursor.put(id, pa);
+	}
+	
+	public void updateBlob(int id, Point2 p){
+		if(checkId(id)){
+			Path pa = new Path();
+			pa.add(p);
+			cursor.replace(id, pa);
+		}
+	}
+	
+	public void removeBlob(int id, Point2 p){
+		if(checkId(id)){
+			cursor.remove(id);
+		}
+	}
+	
+	public void drawAllPath(Graphics2D g2){
+		for (HashMap.Entry<Integer,Path> e : cursor.entrySet()){
+		    e.getValue().draw(g2);
+		}
+	}
+	
+	public boolean checkId(int id){
+		for ( Integer c : cursor.keySet()){
+			if(c == id) return true;
+		}
+		return false;
+	}
+}

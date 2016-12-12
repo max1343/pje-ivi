@@ -10,15 +10,20 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.objectaid.uml.addon.cls.alignment" itemType="typeToolBarContribution" x="180" y="30"/>
+<coolItem id="com.objectaid.uml.addon.cls.display" itemType="typeToolBarContribution" x="320" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="190" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -36,48 +41,58 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Path.java" partName="Path.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/mygeom/Path.java" title="Path.java" tooltip="MT_Widget/src/mygeom/Path.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Path.java" partName="Path.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/mygeom/Path.java" title="Path.java" tooltip="MT_Widget/src/mygeom/Path.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/Path.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="996" selectionTopPixel="127"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTSurface.java" partName="MTSurface.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/widget/MTSurface.java" title="MTSurface.java" tooltip="MT_Widget/src/widget/MTSurface.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/widget/MTSurface.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="478" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/main/Main.java" title="Main.java" tooltip="MT_Widget/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1610" selectionTopPixel="610"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point2.java" partName="Point2.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/mygeom/Point2.java" title="Point2.java" tooltip="MT_Widget/src/mygeom/Point2.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/Point2.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="293" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tuple2.java" partName="Tuple2.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/mygeom/Tuple2.java" title="Tuple2.java" tooltip="MT_Widget/src/mygeom/Tuple2.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/Tuple2.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="688" selectionTopPixel="382"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlobQueue.java" partName="BlobQueue.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/event/BlobQueue.java" title="BlobQueue.java" tooltip="MT_Widget/src/event/BlobQueue.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/event/BlobQueue.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="825" selectionTopPixel="52"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChangedSideListener.java" partName="ChangedSideListener.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/mygeom/ChangedSideListener.java" title="ChangedSideListener.java" tooltip="MT_Widget/src/mygeom/ChangedSideListener.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/ChangedSideListener.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChangedSideEvent.java" partName="ChangedSideEvent.java" path="/home/m1/brusc/Documents/m1/ivi/MTProject/MT_Widget/src/mygeom/ChangedSideEvent.java" title="ChangedSideEvent.java" tooltip="MT_Widget/src/mygeom/ChangedSideEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/ChangedSideEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="49" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/main/Main.java" title="Main.java" tooltip="MT_Widget/src/main/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/main/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2058" selectionTopPixel="859"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point2.java" partName="Point2.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/mygeom/Point2.java" title="Point2.java" tooltip="MT_Widget/src/mygeom/Point2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/Point2.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComponentMap.java" partName="ComponentMap.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/event/ComponentMap.java" title="ComponentMap.java" tooltip="MT_Widget/src/event/ComponentMap.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/event/ComponentMap.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTComponent.java" partName="MTComponent.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/widget/MTComponent.java" title="MTComponent.java" tooltip="MT_Widget/src/widget/MTComponent.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/widget/MTComponent.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1049" selectionTopPixel="697"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTPicture.java" partName="MTPicture.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/widget/MTPicture.java" title="MTPicture.java" tooltip="MT_Widget/src/widget/MTPicture.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/widget/MTPicture.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="832" selectionTopPixel="111"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OBB.java" partName="OBB.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/mygeom/OBB.java" title="OBB.java" tooltip="MT_Widget/src/mygeom/OBB.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/mygeom/OBB.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="159" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTContainer.java" partName="MTContainer.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/widget/MTContainer.java" title="MTContainer.java" tooltip="MT_Widget/src/widget/MTContainer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/widget/MTContainer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1085" selectionTopPixel="451"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InternalGestureState.java" partName="InternalGestureState.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/event/InternalGestureState.java" title="InternalGestureState.java" tooltip="MT_Widget/src/event/InternalGestureState.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/event/InternalGestureState.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="713" selectionTopPixel="5"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlobQueue.java" partName="BlobQueue.java" path="/home/nano-pc/Bureau/pje-ivi/MTProject/MT_Widget/src/event/BlobQueue.java" title="BlobQueue.java" tooltip="MT_Widget/src/event/BlobQueue.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MT_Widget/src/event/BlobQueue.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="728" selectionTopPixel="544"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -92,8 +107,8 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
 </view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.ui.resourcePerspective">
@@ -108,6 +123,8 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.objectaid.uml.addon.cls.display"/>
+<alwaysOnActionSet id="com.objectaid.uml.addon.cls.alignment"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.ui.views.BookmarkView"/>
 <show_view_action id="org.eclipse.ui.views.ContentOutline"/>
@@ -181,164 +198,169 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/Path.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/widget/MTSurface.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/main/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/Point2.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/BlobQueue.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/Vector2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/widget/MTComponent.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/widget/MTPicture.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/OBB.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/widget/MTContainer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/Tuple2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/event/InternalGestureState.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/event/BlobQueue.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/ChangedSideListener.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/ChangedSideEvent.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/event/GestureAnalyzer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/mygeom/Path.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/main/Main.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MT_Widget/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.awt(EventQueue.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MT_Widget/src/event/BlobQueue.java"/>
 </editors>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="491" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="560" y="0"/>
 </item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="501" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3251" y="0"/>
 </item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="327" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3483" y="0"/>
 </item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="534" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3286" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1714" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3325" y="0"/>
 </item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="551" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
+<item historyLabel="MTComponent.java" index="1">
 <position/>
 </item>
-<item historyLabel="Path.java" index="0">
-<position/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="551" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2119" y="7"/>
-</item>
-<item historyLabel="MTSurface.java" index="1">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2119" y="7"/>
-</item>
-<item historyLabel="Point2.java" index="3">
-<position info="not_deleted" x="293" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2119" y="7"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="746" y="0"/>
-</item>
-<item historyLabel="BlobQueue.java" index="4">
+<item historyLabel="Vector2.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
-<position info="not_deleted" x="972" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
+<item historyLabel="MTComponent.java" index="1">
+<position/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3461" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3457" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3169" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3477" y="0"/>
+</item>
+<item historyLabel="Vector2.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
-<position info="not_deleted" x="735" y="0"/>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3477" y="0"/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
+<item historyLabel="Tuple2.java" index="5">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="MTContainer.java" index="4">
+<position info="not_deleted" x="636" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3477" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3376" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3426" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="2933" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="2989" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="3035" y="0"/>
+</item>
+<item historyLabel="MTComponent.java" index="1">
+<position info="not_deleted" x="1049" y="0"/>
+</item>
+<item historyLabel="MTContainer.java" index="4">
+<position info="not_deleted" x="636" y="0"/>
+</item>
+<item historyLabel="MTContainer.java" index="4">
+<position info="not_deleted" x="1085" y="0"/>
+</item>
+<item historyLabel="MTContainer.java" index="4">
+<position info="not_deleted" x="1085" y="0"/>
+</item>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="146" y="0"/>
+</item>
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="631" y="0"/>
+</item>
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="MTPicture.java" index="2">
 <position info="not_deleted" x="832" y="0"/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
+<item historyLabel="BlobQueue.java" index="7">
 <position/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
-<position info="not_deleted" x="825" y="0"/>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="146" y="0"/>
 </item>
-<item historyLabel="MTSurface.java" index="1">
-<position info="not_deleted" x="988" y="0"/>
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="159" y="0"/>
 </item>
-<item historyLabel="BlobQueue.java" index="5">
-<position info="not_deleted" x="825" y="0"/>
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="159" y="0"/>
 </item>
-<item historyLabel="MTSurface.java" index="1">
-<position info="not_deleted" x="1460" y="0"/>
-</item>
-<item historyLabel="BlobQueue.java" index="5">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="MTSurface.java" index="1">
-<position info="not_deleted" x="478" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="746" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="1042" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="1203" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="1117" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="1136" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="1179" y="0"/>
-</item>
-<item historyLabel="Path.java" index="0">
-<position info="not_deleted" x="996" y="0"/>
-</item>
-<item historyLabel="MTSurface.java" index="1">
-<position info="not_deleted" x="478" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2119" y="7"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1227" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1821" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1227" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2200" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="2200" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1499" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1610" y="0"/>
-</item>
-<item historyLabel="ChangedSideListener.java" index="6">
+<item historyLabel="GestureAnalyzer.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="ChangedSideEvent.java" index="7">
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="Path.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="597" y="0"/>
+</item>
+<item historyLabel="OBB.java" index="3">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="713" y="0"/>
+</item>
+<item historyLabel="BlobQueue.java" index="7">
+<position/>
+</item>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="713" y="0"/>
+</item>
+<item historyLabel="BlobQueue.java" index="7">
+<position info="not_deleted" x="872" y="0"/>
+</item>
+<item historyLabel="InternalGestureState.java" index="6">
+<position info="not_deleted" x="713" y="0"/>
+</item>
+<item historyLabel="Main.java" index="10">
+<position info="not_deleted" x="2058" y="0"/>
+</item>
+<item historyLabel="EventQueue.class" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="BlobQueue.java" index="12">
+<position info="not_deleted" x="772" y="58"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -346,10 +368,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-<trimItem IMemento.internal.id="bottomLeft"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -357,40 +375,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlobQueue.java" tooltip="MT_Widget/src/event/BlobQueue.java">
+<persistable path="/MT_Widget/src/event/BlobQueue.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="EventQueue.class" tooltip="java.awt.EventQueue">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MT_Widget/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.awt(EventQueue.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GestureAnalyzer.java" tooltip="MT_Widget/src/event/GestureAnalyzer.java">
+<persistable path="/MT_Widget/src/event/GestureAnalyzer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InternalGestureState.java" tooltip="MT_Widget/src/event/InternalGestureState.java">
+<persistable path="/MT_Widget/src/event/InternalGestureState.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tuple2.java" tooltip="MT_Widget/src/mygeom/Tuple2.java">
+<persistable path="/MT_Widget/src/mygeom/Tuple2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTContainer.java" tooltip="MT_Widget/src/widget/MTContainer.java">
+<persistable path="/MT_Widget/src/widget/MTContainer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OBB.java" tooltip="MT_Widget/src/mygeom/OBB.java">
+<persistable path="/MT_Widget/src/mygeom/OBB.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SRTEvent.java" tooltip="MT_Widget/src/event/SRTEvent.java">
+<persistable path="/MT_Widget/src/event/SRTEvent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SRTEventListener.java" tooltip="MT_Widget/src/event/SRTEventListener.java">
+<persistable path="/MT_Widget/src/event/SRTEventListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTPicture.java" tooltip="MT_Widget/src/widget/MTPicture.java">
+<persistable path="/MT_Widget/src/widget/MTPicture.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTComponent.java" tooltip="MT_Widget/src/widget/MTComponent.java">
+<persistable path="/MT_Widget/src/widget/MTComponent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vector2.java" tooltip="MT_Widget/src/mygeom/Vector2.java">
+<persistable path="/MT_Widget/src/mygeom/Vector2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComponentMap.java" tooltip="MT_Widget/src/event/ComponentMap.java">
+<persistable path="/MT_Widget/src/event/ComponentMap.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChangedSideEvent.java" tooltip="MT_Widget/src/mygeom/ChangedSideEvent.java">
 <persistable path="/MT_Widget/src/mygeom/ChangedSideEvent.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChangedSideListener.java" tooltip="MT_Widget/src/mygeom/ChangedSideListener.java">
 <persistable path="/MT_Widget/src/mygeom/ChangedSideListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlobQueue.java" tooltip="MT_Widget/src/event/BlobQueue.java">
-<persistable path="/MT_Widget/src/event/BlobQueue.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlobQueue.java" tooltip="MT_Widget/src/mygeom/BlobQueue.java">
-<persistable path="/MT_Widget/src/mygeom/BlobQueue.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tuple2.java" tooltip="MT_Widget/src/mygeom/Tuple2.java">
-<persistable path="/MT_Widget/src/mygeom/Tuple2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Point2.java" tooltip="MT_Widget/src/mygeom/Point2.java">
-<persistable path="/MT_Widget/src/mygeom/Point2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="MT_Widget/src/main/Main.java">
-<persistable path="/MT_Widget/src/main/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MTSurface.java" tooltip="MT_Widget/src/widget/MTSurface.java">
-<persistable path="/MT_Widget/src/widget/MTSurface.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Path.java" tooltip="MT_Widget/src/mygeom/Path.java">
-<persistable path="/MT_Widget/src/mygeom/Path.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OBB.java" tooltip="MT_Widget/src/OBB.java">
-<persistable path="/MT_Widget/src/OBB.java"/>
 </file>
 </mruList>
 </workbench>

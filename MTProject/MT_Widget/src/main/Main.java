@@ -54,7 +54,7 @@ public class Main {
 		mts.setPreferredSize(new Dimension(1000,500));
 		mts.addChangeSideListener(new ChangeSideEventListener(){
 			public void changedSidePerformed(ChangeSideEvent evt) { 
-				System.out.println("curseur d'id : "+evt.getCursorId()+" a changé de coté"); 
+				System.out.println("curseur d'id : "+evt.getCursorId()+" a changï¿½ de cotï¿½"); 
 				}
 
 			public void gesturePerformed(ChangeSideEvent e) {
@@ -76,7 +76,8 @@ public class Main {
 	         }          
 	      });
 		
-		MTPicture mtp = new MTPicture("licorne.jpg", new Tuple2(500,500), new Tuple2(0,0));
+		
+		MTPicture mtp = new MTPicture("Thunder.jpg", new Tuple2(500,500), new Tuple2(0,0));
 		mts.add(mtp);
 		mtp = new MTPicture("Bird.jpg", new Tuple2(500,500), new Tuple2(50,50));
 		mts.add(mtp);

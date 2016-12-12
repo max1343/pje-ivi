@@ -2,6 +2,8 @@ package event;
 
 import java.awt.Graphics2D;
 import java.util.HashMap;
+import java.util.Map.Entry;
+
 
 import mygeom.Path;
 import mygeom.Point2;
@@ -28,7 +30,7 @@ public class BlobQueue {
 		if(checkId(id)){
 			Path pa = new Path();
 			pa.add(p);
-			cursor.replace(id, pa);
+			//cursor.replace(id, pa);
 		}
 	}
 	

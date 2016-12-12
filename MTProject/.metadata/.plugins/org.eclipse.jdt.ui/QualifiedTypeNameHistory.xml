@@ -18,7 +18,10 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="mygeom.Point2"/>
 <fullyQualifiedTypeName name="sun.java2d.pipe.DrawImage"/>
-<fullyQualifiedTypeName name="widget.MTComponent"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.awt.geom.AffineTransform"/>
+<fullyQualifiedTypeName name="mygeom.OBB"/>
+<fullyQualifiedTypeName name="mygeom.Vector2"/>
+<fullyQualifiedTypeName name="widget.MTComponent"/>
 </qualifiedTypeNameHistroy>

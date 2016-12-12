@@ -9,7 +9,9 @@ import event.DiscreteEvent;
 import event.DiscreteEventListener;
 import event.SRTEvent;
 import event.SRTEventListener;
+import mygeom.OBB;
 import mygeom.Point2;
+import mygeom.Vector2;
 
 public abstract class MTComponent extends JComponent{
 	protected Point2 taille;
@@ -17,11 +19,19 @@ public abstract class MTComponent extends JComponent{
 	protected  EventListenerList listenerList;
 	protected DiscreteEvent disEvent;
 	protected SRTEvent srtEvent;
+	protected OBB obb;
 	
 	public MTComponent(){
 		taille = new Point2();
 		pos = new Point2();
 		listenerList = new EventListenerList();
+	}
+	
+	public void setPosition(double angle, Vector2 origine, double h, double w){
+		obb.setAngle(angle);
+		obb.setOrigine(origine);
+		obb.setHeight(h);
+		obb.setWidth(w);
 	}
 	
 	public void addSTEventListener(SRTEventListener srtl){
@@ -95,5 +105,24 @@ public abstract class MTComponent extends JComponent{
 			}
 		}
 		return false;
+	}
+
+	public boolean isInside(Vector2 p){
+		if( p.getX() < (obb.getOrigine().getX() +  taille.getX()) && p.getX() > obb.getOrigine().getX()){
+			if( p.getY() < (obb.getOrigine().getY() + taille.getY()) && p.getY() > obb.getOrigine().getY()){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public void updatePosition(Vector2 t,double angle,double k){ 
+		obb.setHeight(k*obb.getHeight());
+		obb.setWidth(k*obb.getWidth());
+		obb.setAngle(angle+obb.getAngle());
+		double x = obb.getOrigine().getX() + t.getX();
+		double y = obb.getOrigine().getX() + t.getY();
+		Vector2 v = new Vector2(x,y);
+		obb.setOrigine(v);
 	}
 }

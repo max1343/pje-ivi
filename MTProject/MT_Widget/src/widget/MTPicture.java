@@ -35,9 +35,7 @@ public class MTPicture extends MTComponent {
 		Graphics2D  g2 = ( Graphics2D ) g ;
 		//this.drawImage(Math.random()*(500+1), Math.random()*(500+1), Math.random()*(50+1), Math.random()*(50+1));
 		g2.drawImage(img,(int) this.getPos().getX() ,(int) this.getPos().getY(),(int) this.getTaille().getX(),(int) this.getTaille().getY(),null);
-
-		
-		
+		//g2.drawImage(img,0,0,(int)obb.getWidth(),(int)obb.getHeight(),null);
 	}
 	
 	public void drawImage(double tx, double ty, double px, double py){
