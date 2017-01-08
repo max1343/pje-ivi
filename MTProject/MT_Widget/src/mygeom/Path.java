@@ -1,13 +1,11 @@
 package mygeom;
 
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
 
 public class Path {
-	private ArrayList<Point2> points;
-	
+	ArrayList<Point2> points;
 	
 	public Path(){
 		points = new ArrayList<Point2>();
@@ -15,17 +13,10 @@ public class Path {
 	
 	public void add(Point2 p){
 		points.add(p);
-		//afficherListe();
 	}
 	
 	public void clear(){
 		points.clear();
-	}
-	
-	public void afficherListe(){
-		for(Point2 p : points){
-			System.out.println("Point: " + p.getX() +":"+ p.getY());
-		}
 	}
 	
 	public void draw(Graphics2D g2){
@@ -38,16 +29,7 @@ public class Path {
 			}
 			g2.draw(polyline);
 			
-			//Ã  faire: dessiner l'isobarycentre
-		}
-	}
-	
-	public Tuple2 getIsobarycentre(){
-		double x = 0.00, y = 0.00;
-		for(Point2 p: points){
-			x += p.getX();
-			y += p.getY();
-		}
-		return new Tuple2(x/points.size(), y/points.size());
+			//à faire: dessiner l'isobarycentre
+		}	
 	}
 }

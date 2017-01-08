@@ -20,8 +20,8 @@ public class MTedt implements TuioListener {
 		if (!client.isConnected()) {
 			System.exit(1);
 		}
-		System.out.println("connexion");		
 		client.addTuioListener(this);
+		System.out.println("connexion");		
 	}
 	
 	public MTedt() {

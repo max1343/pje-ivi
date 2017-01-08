@@ -1,0 +1,15 @@
+package mygeom;
+
+import java.util.HashMap;
+
+public class BlobQueue {
+	HashMap<Integer,Path> cursor; 
+	
+	public BlobQueue() {
+		cursor=new HashMap<Integer,Path>(); 
+	}
+	
+	public void addCursor(int idCursor, Point2 p){
+		cursor.put(idCursor, p);
+	}
+}

@@ -18,5 +18,5 @@ public class Point2 extends Tuple2 {
 		public Point2(double x,double y) {
 			super(x,y);
 		}
-			
+				
 }
