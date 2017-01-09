@@ -1,0 +1,47 @@
+	protected Vector<Tuple2> resample(Vector<Tuple2> points, int n)
+	{	
+		double I = pathLength(points) / (n - 1);
+		double D = 0.0;
+		
+		Vector<Tuple2> srcPts = new Vector<Tuple2>();
+		for (int i = 0; i < points.size(); i++) {
+			srcPts.add(new Tuple2(points.elementAt(i).x, points.elementAt(i).y));
+		}
+
+		Vector<Tuple2> dstPts = new Vector<Tuple2>(n);
+		dstPts.addElement(new Tuple2(points.elementAt(0).x, points.elementAt(0).y));
+
+		for (int i = 1; i < srcPts.size(); i++)
+		{
+			Tuple2 pt1 = (Tuple2) srcPts.elementAt(i - 1);
+			Tuple2 pt2 = (Tuple2) srcPts.elementAt(i);
+
+			double d = Math.sqrt((pt2.x-pt1.x)*(pt2.x-pt1.x) + (pt2.y-pt1.y)*(pt2.y-pt1.y));
+			if ((D + d) >= I)
+			{
+				double qx = pt1.x + ((I - D) / d) * (pt2.x - pt1.x);
+				double qy = pt1.y + ((I - D) / d) * (pt2.y - pt1.y);
+				Tuple2 q = new Tuple2(qx, qy);
+				dstPts.addElement(q);
+				srcPts.insertElementAt(q, i);
+				D = 0.0;
+			}
+			else
+			{
+				D += d;
+			}
+		}
+		
+		// hack pour pbs d'arrondis
+		if (dstPts.size() == n - 1)
+		{
+			dstPts.addElement(srcPts.elementAt(points.size() - 1));
+		}
+		
+		Vector<Tuple2> dstPts2 = new Vector<Tuple2>();
+		for (int i = 0; i < dstPts.size(); i++) {
+			dstPts2.add(new Tuple2(dstPts.elementAt(i).x, dstPts.elementAt(i).y));
+		}
+		
+		return dstPts2;
+	}		

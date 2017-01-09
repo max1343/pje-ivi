@@ -1,0 +1,12 @@
+	// Calcul de la matrice de passe du monde au rep�re d'un segment
+	// dst1 est l'"origine" du segment et tuple2 est le vecteur associ� au segment
+	AffineTransform computeFrame(Point2 dst1,Tuple2 tuple2) {
+		AffineTransform res=new AffineTransform();
+		Vector2 i=new Vector2(tuple2.x, tuple2.y);
+		i.normalize();
+		Point2 j=new Point2();
+		j.x=-i.y;
+		j.y=i.x;
+		res.setTransform(i.x,i.y,j.x,j.y,dst1.x,dst1.y);
+		return res;
+	}
